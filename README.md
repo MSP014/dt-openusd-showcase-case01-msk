@@ -103,6 +103,14 @@ To keep this repository lightweight, heavy binary assets (USD Crates, Textures, 
 
 ---
 
+## 🛠️ Technical Stack
+
+- **Python**: 3.10
+- **Houdini FX**: 21.0.596
+- **NVIDIA Omniverse**: 5.1.0 (USD/Python)
+
+---
+
 ## 📜 Changelog
 
 - **2026-02-02:** Implemented external storage strategy for heavy assets (Git-agnostic).
