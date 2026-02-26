@@ -12,11 +12,12 @@
 ## [PIPELINE] Asset Hydration & Bootstrap
 
 - **Status:** Open
-- **Severity:** Medium
-- **Description:** Per ADR 005, a mechanism is needed to sync heavy assets into the repository structure.
+- **Severity:** Low (Process)
+- **Description:** Per ADR 005 revision, heavy assets (textures, caches) will be distributed via a simple ZIP archive rather than a custom `bootstrap.py` script to avoid unnecessary infrastructure overhead.
 - **Tasks to Resolve:**
-  - Create `tools/bootstrap.py` for directory setup and asset downloading.
-  - Upload initial asset multi to external storage and document links in README.
+  - Pack initial heavy assets into a `case01_assets.zip` archive.
+  - Upload the archive to external storage (e.g., Google Drive / OneDrive).
+  - Add the download link and explicit manual extraction instructions to the `README.md` under a "Heavy Assets Setup" section.
 
 ## [ENVIRONMENT] Pip Security Lock (CVE-2026-1703)
 
